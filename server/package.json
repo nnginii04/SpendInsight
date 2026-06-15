@@ -1,0 +1,19 @@
+{
+  "name": "geumso-pae-server",
+  "version": "2.0.0",
+  "description": "금융 소비 패턴 분석 시스템 - Express JWT API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test:db": "node scripts/test-connection.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  }
+}
