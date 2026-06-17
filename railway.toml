@@ -1,0 +1,11 @@
+# Railway 백엔드 배포 설정
+# 대시보드에서 Web Service 생성 시 Root Directory = server 로 설정
+
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/api/health"
+restartPolicyType = "ON_FAILURE"
